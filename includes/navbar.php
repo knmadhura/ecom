@@ -1,7 +1,9 @@
 <?php
-session_start(); // Required to use $_SESSION
+// Safe session start — prevents "session already started" warnings
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
     <div class="container">
         <a class="navbar-brand fw-bold" href="index.php"><i class="bi bi-bag-check"></i> E-Commerce</a>
@@ -21,12 +23,12 @@ session_start(); // Required to use $_SESSION
                     <li class="nav-item">
                         <a class="nav-link" href="login.php"><i class="bi bi-person-circle"></i> Login</a>
                     </li>
+                
                 <?php else: ?>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php"><i class="bi bi-box-arrow-right"></i> Logout</a>
                     </li>
                 <?php endif; ?>
-
             </ul>
         </div>
     </div>

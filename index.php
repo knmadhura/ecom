@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Home</title>
-    <?php include "./includes/header.php"?>
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     <style>
         body {
             background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
@@ -40,7 +43,8 @@
 </head>
 
 <body>
-    <?php include "./includes/navbar.php"?>
+
+    <?php include "./includes/navbar.php"; ?>
 
     <!-- Hero Section -->
     <div class="container my-5">
@@ -57,6 +61,7 @@
     <div class="container pb-5" id="products">
         <h2 class="mb-4 text-center fw-bold">Our Products</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
+
             <!-- Product 1 -->
             <div class="col">
                 <div class="product-card card h-100">
@@ -66,12 +71,12 @@
                         <p class="card-text text-primary fw-semibold">$19.99</p>
                         <div class="d-flex justify-content-between">
                             <button class="btn btn-success btn-sm"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View
-                                Details</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- Product 2 -->
             <div class="col">
                 <div class="product-card card h-100">
@@ -81,12 +86,12 @@
                         <p class="card-text text-primary fw-semibold">$29.99</p>
                         <div class="d-flex justify-content-between">
                             <button class="btn btn-success btn-sm"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View
-                                Details</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- Product 3 -->
             <div class="col">
                 <div class="product-card card h-100">
@@ -96,17 +101,21 @@
                         <p class="card-text text-primary fw-semibold">$39.99</p>
                         <div class="d-flex justify-content-between">
                             <button class="btn btn-success btn-sm"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View
-                                Details</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Add more products as needed -->
+
+            <!-- Add more products here -->
+
         </div>
     </div>
 
-    <?php include "./includes/footer.php"?>
-</body>
+    <?php include "./includes/footer.php"; ?>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+
